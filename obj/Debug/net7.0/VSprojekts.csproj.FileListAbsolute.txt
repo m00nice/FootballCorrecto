@@ -1,0 +1,15 @@
+C:\Users\m00ni\VSprojekts\Football\bin\Debug\net7.0\VSprojekts.exe
+C:\Users\m00ni\VSprojekts\Football\bin\Debug\net7.0\VSprojekts.deps.json
+C:\Users\m00ni\VSprojekts\Football\bin\Debug\net7.0\VSprojekts.runtimeconfig.json
+C:\Users\m00ni\VSprojekts\Football\bin\Debug\net7.0\VSprojekts.dll
+C:\Users\m00ni\VSprojekts\Football\bin\Debug\net7.0\VSprojekts.pdb
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.csproj.AssemblyReference.cache
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.AssemblyInfoInputs.cache
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.AssemblyInfo.cs
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.csproj.CoreCompileInputs.cache
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.dll
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\refint\VSprojekts.dll
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.pdb
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\VSprojekts.genruntimeconfig.cache
+C:\Users\m00ni\VSprojekts\Football\obj\Debug\net7.0\ref\VSprojekts.dll
