@@ -8,14 +8,14 @@ namespace Football
         {
             
 
-            string setupPath = "setup.csv";
+            //string setupPath = "setup.csv";
 
             string teamsPath = "teams/Teams.csv";
 
 
             bool isPlaying = false;
 
-            string userInput;
+            string? userInput;
 
             Console.WriteLine("You game?(write yes or y if you're ready)");
 
