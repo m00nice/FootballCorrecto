@@ -1,0 +1,78 @@
+Yes, you can read and parse CSV files in C# without using a library like CsvHelper. Here's an example of how you can read a CSV file and add the values to a new object:
+
+csharp
+Copy code
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+// Define a class to represent the data in the CSV file
+public class MyData
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Address { get; set; }
+    // Add any other properties you need to represent the data
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create a list to store the data read from the CSV file
+        List<MyData> dataList = new List<MyData>();
+
+        // Open the CSV file
+        using (var reader = new StreamReader("myfile.csv"))
+        {
+            // Read the CSV file and add each row to the dataList
+            while (!reader.EndOfStream)
+            {
+                var line = reader.ReadLine();
+                var values = line.Split(',');
+
+                var data = new MyData
+                {
+                    Name = values[0],
+                    Age = int.Parse(values[1]),
+                    Address = values[2],
+                    // Add any other properties you need to set
+                };
+                dataList.Add(data);
+            }
+        }
+
+        // Now you can do whatever you want with the dataList
+        // For example, you could create a new object like this:
+        var myObject = new {
+            Name = dataList[0].Name,
+            Age = dataList[0].Age,
+            Address = dataList[0].Address,
+            // Add any other properties you need to set
+        };
+    }
+}
+In this example, we define a MyData class to represent the data in the CSV file, 
+with properties for each column. We then create a list to store the data read from the CSV file, 
+and use the StreamReader class to read the file and add each row to the list. 
+We split each line of the CSV file by the comma character to get the values for each column, 
+and then create a new MyData object using those values. Finally, 
+we create a new object using the values from the first row of the CSV file (assuming there is at least one row). 
+You'll need to adjust the code to match the structure of your CSV file and the object you want to create.
+_______________________________________________________________________________________________________________________________
+
+in c# how do i sort a list of object by attribute
+To sort a list of objects by an attribute in C#, you can use the OrderBy() or OrderByDescending() LINQ extension methods. Here is an example:
+
+Let's say you have a List<Team> where Team is a class with an int attribute called points, and you want to sort the list in descending order based on each team's points. 
+You can do this as follows:
+
+scss
+Copy code
+List<Team> teams = GetTeams(); // assume this method returns a list of Team objects
+
+List<Team> sortedTeams = teams.OrderByDescending(t => t.points).ToList();
+In this example, t => t.points is a lambda expression that selects the points attribute of each Team object. 
+The OrderByDescending() method sorts the list in descending order based on the values of the points attribute, and the ToList() method converts the result to a new List<Team>.
+
+If you want to sort the list in ascending order instead, you can use the OrderBy() method instead of OrderByDescending().

@@ -28,27 +28,8 @@ namespace Football
             isPlaying = true;
 
              }
-
-
-
-
-             while(isPlaying){
-
-            Console.WriteLine(
-            """
-            Start by select your setup for your tournament,
-            you can choose between(type the number of the tournament)
-
-            1. Superligaen
-
-            2. NordicBetLigaen
-            """);
-
-            userInput = Console.ReadLine();
-            switch(userInput){
-
-            case "1":
-            //scan csv files and write rules and teams in console
+            /*
+            /
 
             using (var reader = new StreamReader(setupPath)){
 
@@ -63,7 +44,30 @@ namespace Football
 
                 }
 
-            }
+            }*/
+
+
+
+             while(isPlaying){
+
+            Console.WriteLine(
+            """
+            Start by select your setup for your tournament,
+            you can choose between(type the number of the tournament)
+
+            1. Superligaen
+
+            2. NordicBetLigaen
+
+            3. Exit
+
+            """);
+
+            userInput = Console.ReadLine();
+            switch(userInput){
+
+            case "1":
+
             List<Team> teamsSL = new List<Team>();
             Random random = new Random();
             teamsSL = teamsSL.OrderBy(x => random.Next()).ToList();
@@ -157,7 +161,7 @@ namespace Football
 
             Choose your next move
 
-            1. Play round{R+1}
+            1. Play round {R+1}
 
             2. See standings
 
@@ -396,7 +400,7 @@ namespace Football
 
                     Choose your next move
 
-                    1. Play round {R}
+                    1. Play round {R+1}
 
                     2. See standings
 
@@ -628,6 +632,8 @@ namespace Football
             break;
             
             case "2":
+
+            Console.WriteLine("sorry league not avaiable");
 
             break;
 
